@@ -34,7 +34,7 @@ public class SchemProvider implements InventoryProvider {
             schem.setItemMeta(schemeta);
             itemss.add(ClickableItem.of(schem, e -> {
                 Player clicker = (Player) e.getWhoClicked();
-                if (clicker.hasPermission("bsl.buy." + schem.getDisplayName())) {
+                if (clicker.hasPermission("bsl.buy." + schem.getSchematic())) {
                     sellStructure(clicker, schem);
                     ItemStack money = new ItemStack(Material.GOLD_INGOT);
                     ItemMeta moneymeta = money.getItemMeta();
