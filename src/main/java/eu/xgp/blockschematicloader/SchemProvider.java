@@ -42,7 +42,7 @@ public class SchemProvider implements InventoryProvider {
                     money.setItemMeta(moneymeta);
                     contents.set(2, 7, ClickableItem.empty(money));
                 } else {
-                    clicker.sendMessage("§4You cannot buy the schematic " + schem.getSchematic() + "§4.");
+                    clicker.sendMessage("§4You cannot buy the schematic " + schem.getDisplayName() + "§4.");
                     p.closeInventory();
                 }
             }));
