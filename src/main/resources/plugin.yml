@@ -1,0 +1,12 @@
+name: BlockSchematicLoader
+version: 1.0
+author: Leog_04
+main: eu.xgp.blockschematicloader.BSLMain
+depend: [WorldEdit, Vault, SmartInvs]
+api-version: 1.13
+commands:
+  bsl:
+  addschem:
+  removeschem:
+  structureshop:
+    aliases: [structures]
